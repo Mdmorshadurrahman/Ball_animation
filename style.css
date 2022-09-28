@@ -1,0 +1,66 @@
+@keyframes fall {
+    0% {
+        visibility: none;
+    }
+
+    1% {
+        visibility: visible;
+        background-color: blue;
+        transform: translate(50px, 50px);
+    }
+
+    50% {
+        visibility: visible;
+        background-color: rgb(104, 240, 70);
+        transform: translate(200px, 490px);
+        height: 15px;
+        width: 15px;
+    }
+
+    70% {
+        visibility: visible;
+        background-color: rgb(104, 240, 70);
+        transform: translate(220px, 300px);
+        height: 15px;
+        width: 15px;
+    }
+
+    80% {
+        visibility: visible;
+        background-color: rgb(240, 70, 175);
+        transform: translate(280px, 490px);
+        height: 15px;
+        width: 15px;
+    }
+
+    90% {
+        visibility: visible;
+        background-color: rgb(240, 70, 175);
+        transform: translate(320px, 380px);
+        height: 15px;
+        width: 15px;
+    }
+
+    100% {
+        visibility: visible;
+        background-color: rgb(129, 104, 238);
+        transform: translate(400px, 490px);
+        height: 5px;
+        width: 5px;
+    }
+}
+
+.box {
+    border: 2px solid gray;
+    height: 500px;
+}
+
+.ball {
+    background-color: blue;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    visibility: hidden;
+    animation: fall 3s ease-out, 5s forwards;
+    animation-play-state: running;
+}
